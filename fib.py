@@ -1,7 +1,9 @@
 n = int(input("n: "))
-fibs = [1, 1]
+x, y = 1, 1
+fibs = []
 
-while len(fibs) < n:
-    fibs.append(fibs[-1] + fib[-2])
+for _ in range(n):
+    fibs.append(x)
+    x, y = y, x + y
   
 print(fibs)
